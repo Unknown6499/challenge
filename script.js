@@ -1,12 +1,19 @@
 `use strict`;
 //selecting elements
-const home = document.querySelector(".Home");
-const gallery = document.querySelector(".Gallery");
-const contact = document.querySelector(".Contact");
-const about = document.querySelector(".About");
-const visit = document.querySelector(".Visit");
+const nav = document.querySelector("#navigation");
+const mainContent = document.querySelectorAll(".main-content");
+//adding event handler
+nav.addEventListener("click", function (e) {
+  const click = e.target;
+  console.log(click);
+  //removing active class
+  mainContent.forEach((t) => t.classList.remove("main-content-active"));
 
-home.addEventListener("click", function (e) {});
+  //adding active class
+  document
+    .querySelector(`.main-content-${click.dataset.tab}`)
+    .classList.add("main-content-active");
+});
 
 //creating array with image links
 const image = [

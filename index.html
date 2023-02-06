@@ -13,14 +13,14 @@
       <h1>this is header</h1>
     </header>
     <nav id="navigation">
-      <button class="btn Home" href="#nav-1">Home</button>
-      <button class="btn Gallery" href="#nav-2">Gallery</button>
-      <button class="btn About" href="#nav-3">About Temple</button>
-      <button class="btn Contact" href="#nav-4">Contact Us</button>
-      <button class="btn Visit" href="#nav-5">How to Visit</button>
+      <button class="btn Home" data-tab="home">Home</button>
+      <button class="btn Gallery" data-tab="gallery">Gallery</button>
+      <button class="btn About" data-tab="about">About Temple</button>
+      <button class="btn Contact" data-tab="contact">Contact Us</button>
+      <button class="btn Visit" data-tab="visit">How to Visit</button>
     </nav>
     <main class="imp">
-      <div class="main-content main-content-active">
+      <div class="main-content main-content-home main-content-active">
         this is first div
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima
@@ -36,23 +36,16 @@
           exercitationem eos veniam atque pariatur odio repellendus quas itaque.
         </p>
       </div>
-      <div class="main-content">
-        this is second
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima
-          cumque earum aliquid tempore ipsum animi ab commodi ipsam. Illo
-          consequuntur mollitia repudiandae repellendus, fugit dicta labore at
-          expedita iusto esse corrupti rem ducimus laudantium omnis in magni
-          sint, dolores qui officia quam sapiente ut? Officiis rem saepe, ad
-          animi odit, deleniti harum perspiciatis veniam voluptates ipsa alias
-          culpa molestiae laudantium perferendis sint placeat reiciendis
-          quisquam cum temporibus neque ut maiores debitis? Libero quibusdam
-          unde nesciunt, architecto adipisci nisi culpa dolorem! Tempora est,
-          dolor vero laudantium praesentium et enim magni reprehenderit
-          exercitationem eos veniam atque pariatur odio repellendus quas itaque.
-        </p>
+      <div class="main-content main-content-gallery">
+        <button id="prev" class="btn-gallery" title="Previous Picture">
+          पिछली फोटो
+        </button>
+        <img src="/images/1.jpg" alt="Bheru Baba" id="img" />
+        <button id="next" class="btn-gallery" title="Next Picture">
+          अगली फोटो
+        </button>
       </div>
-      <div class="main-content">
+      <div class="main-content main-content-about">
         this is third
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima
@@ -68,7 +61,7 @@
           exercitationem eos veniam atque pariatur odio repellendus quas itaque.
         </p>
       </div>
-      <div class="main-content">
+      <div class="main-content main-content-contact">
         THIS Is fourth
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima
@@ -84,7 +77,7 @@
           exercitationem eos veniam atque pariatur odio repellendus quas itaque.
         </p>
       </div>
-      <div class="main-content">
+      <div class="main-content main-content-visit">
         this is fifth
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima
@@ -101,7 +94,7 @@
         </p>
       </div>
     </main>
-    <footer>this is footer</footer>
+    <footer>copyright all rights reserved to Creator Itself(NP)</footer>
 
     <script src="script.js"></script>
   </body>
