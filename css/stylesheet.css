@@ -5,7 +5,8 @@
 }
 
 body {
-  background-image: url("images/bg.png");
+  background-image: url("bg.png");
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
 }
@@ -32,14 +33,15 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   background-color: darkorange;
+  box-shadow: 1rem 2rem 1rem #884d3f;
 }
 #navigation .btn {
   border: none;
   background-color: transparent;
-  font-size: 2.3rem;
+  font-size: 1.3rem;
   text-decoration: none;
-  padding: 10px;
-  color: white;
+  padding: 1rem 1.5rem;
+  color: #dfe0df;
 }
 #navigation .btn:hover {
   background-color: white;
@@ -47,9 +49,10 @@ body {
 }
 /*main*/
 main {
-  height: 100vh;
-  background-image: url("images/bg1.png");
-  color: darkred;
+  height: 88vh;
+  background-image: linear-gradient(#884d3f, #dab9b0);
+  color: white;
+  padding: 1rem;
 }
 .main-content {
   display: none;
@@ -75,7 +78,7 @@ main {
 }
 .btn-gallery {
   width: 4rem;
-  font-size: 30px;
+  font-size: 1rem;
   border: none;
   background-color: transparent;
   color: darkorange;
@@ -83,9 +86,9 @@ main {
 
 /* setting image properties */
 #img {
-  margin: 2rem 4rem;
+  margin: 1rem 1rem;
   max-width: 600px;
-  height: 30rem;
+  height: 55vh;
   border: none;
   border-radius: 10px;
 }
@@ -93,7 +96,8 @@ main {
 /*
 styling footer */
 footer {
-  background-color: white;
+  background-color: darkorange;
   text-align: center;
-  color: darkorange;
+  color: #dfe0df;
+  height: auto;
 }
